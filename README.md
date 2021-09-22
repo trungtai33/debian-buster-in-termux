@@ -4,8 +4,7 @@
 ```
 curl --silent --location --remote-name https://github.com/trungtai33/debian-buster-in-termux/raw/master/installation/debian-buster.sh && bash debian-buster.sh && rm debian-buster.sh
 ```
-After install, run ```start-debian-buster``` to login.
-
+After installation, run the command ```start-debian-buster``` to login.
 ## Uninstall
 Be careful when using this command as it does not ask for confirmation.
 ```
