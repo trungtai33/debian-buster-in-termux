@@ -23,7 +23,7 @@ curl --fail --retry 5 --location --output "${tarball}" \
 mkdir -p "${PREFIX}/share/${directory}"
 printf "\n\e[34m[\e[32m*\e[34m]\e[36m Installing Debian Buster, please wait...\n\e[31m"
 proot --link2symlink tar -xf "${tarball}" --directory="${PREFIX}/share/${directory}" --exclude='dev'||:
-printf "\e[34m[\e[32m*\e[34m]\e[36m Setting up Debian Bullseye, please wait...\n\e[31m"
+printf "\e[34m[\e[32m*\e[34m]\e[36m Setting up Debian Buster, please wait...\n\e[31m"
 rm -f "${tarball}"
 cat <<- EOF >> "${PREFIX}/share/${directory}/etc/profile"
 export PULSE_SERVER="127.0.0.1"
