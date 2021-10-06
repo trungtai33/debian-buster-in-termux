@@ -159,7 +159,7 @@ EOF
 cat <<- EOF > "${PREFIX}/share/${directory}/proc/.version"
 Linux version 4.19.0 (termux@debian) (gcc version 4.9 (GCC)) $(uname -v)
 EOF
-bin="start-debian-buster"
+bin="start-${directory}"
 cat <<- EOF > "${PREFIX}/bin/${bin}"
 #!/data/data/com.termux/files/usr/bin/bash
 unset LD_PRELOAD
